@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mio Negozio Roblox - Pro Style</title>
+    <title>Gays Studios - Roblox Shop</title>
     <style>
         body {
-            background-color: #0f111a; /* Sfondo scuro professionale */
+            background-color: #0d1117;
             color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -19,19 +19,34 @@
         nav {
             background: #161b22;
             width: 100%;
-            padding: 15px 0;
+            padding: 20px 0;
             text-align: center;
-            border-bottom: 2px solid #30363d;
+            border-bottom: 2px solid #58a6ff;
             position: sticky;
             top: 0;
             z-index: 1000;
         }
 
+        .nav-logo {
+            color: #58a6ff;
+            font-weight: bold;
+            font-size: 24px;
+            margin-right: 30px;
+            text-shadow: 0 0 10px rgba(88, 166, 255, 0.5);
+        }
+
         nav a {
             color: #c9d1d9;
-            margin: 0 20px;
+            margin: 0 15px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
+        }
+
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(180deg, #161b22 0%, #0d1117 100%);
+            width: 100%;
         }
 
         .container {
@@ -39,38 +54,37 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 30px;
-            padding: 40px;
+            padding: 50px 20px;
         }
 
         .pass-card {
             background-color: #161b22;
             border: 1px solid #30363d;
-            border-radius: 12px;
-            width: 300px;
-            padding: 25px;
+            border-radius: 16px;
+            width: 320px;
+            padding: 30px;
             text-align: center;
-            transition: transform 0.3s;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            transition: all 0.3s ease;
         }
 
         .pass-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-15px);
             border-color: #58a6ff;
         }
 
         .price {
-            font-size: 32px;
+            font-size: 36px;
             font-weight: bold;
-            margin: 15px 0;
             color: #58a6ff;
+            margin: 20px 0;
         }
 
         button {
             width: 100%;
-            padding: 12px;
-            margin: 8px 0;
+            padding: 14px;
+            margin: 10px 0;
             border: none;
-            border-radius: 6px;
+            border-radius: 8px;
             font-weight: bold;
             cursor: pointer;
         }
@@ -83,56 +97,53 @@
 <body>
 
     <nav>
+        <span class="nav-logo">GAYS STUDIOS</span>
         <a href="#">HOME</a>
         <a href="#">PRODOTTI</a>
         <a href="#">DISCORD</a>
     </nav>
 
-    <h1 style="margin-top: 30px;">Mio Negozio Roblox</h1>
+    <div class="header">
+        <h1>Gays Studios</h1>
+        <p>Potenzia la tua esperienza su Roblox con i nostri Pass esclusivi</p>
+    </div>
 
     <div class="container">
         <div class="pass-card">
             <h3>Pass Base</h3>
             <div class="price">10€</div>
-            <p>✅ Rango Membro</p>
-            <p>✅ Chat Community</p>
-            
-            <a href="https://www.paypal.me/nicholas1388/10" target="_blank">
-                <button class="btn-paypal">Paga 10€ ora (PayPal)</button>
+            <p>✅ Rango Membro nel gruppo</p>
+            <p>✅ Accesso Chat Community</p>
+            <a href="https://www.paypal.me/nicholas1388/10" target="_blank" style="text-decoration:none;">
+                <button class="btn-paypal">Paga 10€ con PayPal</button>
             </a>
-            
             <button id="stripe-button-base" class="btn-stripe">Paga 10€ con Carta</button>
         </div>
 
         <div class="pass-card">
             <h3>Pass VIP</h3>
             <div class="price">50€</div>
-            <p>✅ Rango VIP Speciale</p>
+            <p>✅ Rango ⭐ VIP Speciale</p>
             <p>✅ Lista Amici Roblox</p>
-            
-            <a href="https://www.paypal.me/nicholas1388/50" target="_blank">
-                <button class="btn-paypal-vip">Paga 50€ ora (PayPal)</button>
+            <a href="https://www.paypal.me/nicholas1388/50" target="_blank" style="text-decoration:none;">
+                <button class="btn-paypal-vip">Paga 50€ con PayPal</button>
             </a>
-            
             <button id="stripe-button-vip" class="btn-stripe">Paga 50€ con Carta</button>
         </div>
     </div>
 
     <script src="https://js.stripe.com/v3/"></script>
     <script>
-        // 1. METTI LA TUA CHIAVE QUI SOTTO
-        const stripe = Stripe('pk_test_51Sl8RdCEOACp5adq9qw13nTQT6lE7BP3V7hOPVGQHtVJOkH0HjY3g7fzxmAuDiAv4haGY97pkwvaZ5VmY0JPBzMB004j8nNaP6'); 
+        // La tua chiave PK e i tuoi link presi dalle foto
+        const stripe = Stripe('pk_test_51Sl8RdCE0ACp5adq9qw13nTQT61E7BP3V7hOPVGQhtVJOkH0HjY3'); 
 
-        // 2. LINK PER IL PASS DA 10€
         document.getElementById('stripe-button-base').addEventListener('click', function() {
             window.location.href = 'https://buy.stripe.com/test_3cI5kC9uE6oB3yY9jD14400';
         });
 
-        // 3. LINK PER IL PASS DA 50€
         document.getElementById('stripe-button-vip').addEventListener('click', function() {
             window.location.href = 'https://buy.stripe.com/test_28E3cugX614h6La7bv14401';
         });
     </script>
-
 </body>
 </html>
