@@ -10,7 +10,6 @@
         nav { background: #161b22; width: 100%; padding: 20px 0; text-align: center; border-bottom: 2px solid #58a6ff; position: sticky; top: 0; z-index: 1000; }
         .nav-logo { color: #58a6ff; font-weight: bold; font-size: 24px; margin-right: 30px; }
         nav a { color: #c9d1d9; margin: 0 15px; text-decoration: none; font-weight: 500; }
-        nav a:hover { color: #58a6ff; }
         .header { text-align: center; padding: 60px 20px; background: linear-gradient(180deg, #161b22 0%, #0d1117 100%); width: 100%; }
         .section-title { margin-top: 50px; color: #58a6ff; font-size: 28px; text-transform: uppercase; letter-spacing: 2px; }
         .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 30px; max-width: 1200px; }
@@ -73,16 +72,18 @@
 
     <h2 id="social" class="section-title">I Nostri Social</h2>
     <div class="container">
-        <a href="METTI_IL_TUO_LINK_DISCORD" target="_blank" class="social-link">
-            <div class="card" style="border-color: #7289da; width: 200px;">
-                <h3 style="color: #7289da;">Discord</h3>
+        <a href="https://discord.gg/44BV6XzmW" target="_blank" class="social-link">
+            <div class="card" style="border-color: #7289da; width: 220px;">
+                <h3 style="color: #7289da;">DISCORD</h3>
                 <p>Entra nel Server</p>
+                <button style="background-color: #7289da; color: white;">UNISCITI</button>
             </div>
         </a>
-        <a href="METTI_IL_TUO_LINK_TIKTOK" target="_blank" class="social-link">
-            <div class="card" style="border-color: #ff0050; width: 200px;">
-                <h3 style="color: #ff0050;">TikTok</h3>
+        <a href="https://www.tiktok.com/@gays.studios" target="_blank" class="social-link">
+            <div class="card" style="border-color: #ff0050; width: 220px;">
+                <h3 style="color: #ff0050;">TIKTOK</h3>
                 <p>Segui i video</p>
+                <button style="background-color: #ff0050; color: white;">SEGUI</button>
             </div>
         </a>
     </div>
@@ -90,14 +91,8 @@
     <script src="https://js.stripe.com/v3/"></script>
     <script>
         const stripe = Stripe('pk_test_51Sl8RdCE0ACp5adq9qw13nTQT61E7BP3V7hOPVGQhtVJOkH0HjY3'); 
-
-        document.getElementById('stripe-10').addEventListener('click', function() {
-            window.location.href = 'https://buy.stripe.com/test_3cI5kC9uE6oB3yY9jD14400';
-        });
-
-        document.getElementById('stripe-50').addEventListener('click', function() {
-            window.location.href = 'https://buy.stripe.com/test_28E3cugX614h6La7bv14401';
-        });
+        document.getElementById('stripe-10').addEventListener('click', function() { window.location.href = 'https://buy.stripe.com/test_3cI5kC9uE6oB3yY9jD14400'; });
+        document.getElementById('stripe-50').addEventListener('click', function() { window.location.href = 'https://buy.stripe.com/test_28E3cugX614h6La7bv14401'; });
     </script>
 </body>
 </html>
