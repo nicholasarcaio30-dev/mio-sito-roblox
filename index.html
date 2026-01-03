@@ -5,115 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gays Studios Official - Nicholas</title>
     <style>
-        body { background: #0d1117; color: white; font-family: 'Segoe UI', sans-serif; text-align: center; margin: 0; padding: 0; }
-        .status { background: #000; padding: 10px; color: #238636; border-bottom: 1px solid #333; font-size: 13px; letter-spacing: 1px; }
-        nav { background: #161b22; padding: 15px; position: sticky; top: 0; border-bottom: 2px solid #58a6ff; z-index: 999; }
-        nav a { color: #58a6ff; margin: 0 10px; text-decoration: none; font-weight: bold; font-size: 14px; }
-        section { padding: 60px 20px; border-bottom: 1px solid #30363d; }
-        .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 20px; margin: 10px; display: inline-block; width: 260px; vertical-align: top; transition: 0.3s; }
-        .card:hover { border-color: #58a6ff; transform: scale(1.02); }
-        .bar { background: #30363d; height: 10px; border-radius: 5px; margin: 10px auto; width: 70%; overflow: hidden; }
+        body { background: #0d1117; color: white; font-family: 'Segoe UI', sans-serif; text-align: center; margin: 0; padding: 0; scroll-behavior: smooth; }
+        .status { background: #000; padding: 10px; color: #238636; border-bottom: 1px solid #333; font-size: 13px; letter-spacing: 1px; position: sticky; top: 0; z-index: 1001; }
+        nav { background: #161b22; padding: 15px; position: sticky; top: 38px; border-bottom: 2px solid #58a6ff; z-index: 1000; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav a { color: #58a6ff; margin: 5px 10px; text-decoration: none; font-weight: bold; font-size: 13px; text-transform: uppercase; }
+        section { padding: 80px 20px; border-bottom: 1px solid #30363d; }
+        .container { max-width: 1100px; margin: auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 25px; width: 280px; transition: 0.3s; position: relative; }
+        .card:hover { border-color: #58a6ff; transform: translateY(-5px); }
+        .bar { background: #30363d; height: 10px; border-radius: 5px; margin: 10px auto; width: 100%; overflow: hidden; }
         .fill { background: #58a6ff; height: 100%; width: 1%; }
-        button { width: 100%; padding: 10px; margin: 5px 0; border-radius: 6px; border: none; font-weight: bold; cursor: pointer; }
-        .footer { background: #090c10; padding: 30px; font-size: 12px; color: #8b949e; }
-        .badge-vip { background: #d4af37; color: black; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: bold; }
+        button { width: 100%; padding: 12px; margin: 5px 0; border-radius: 6px; border: none; font-weight: bold; cursor: pointer; transition: 0.2s; }
+        .badge { background: #58a6ff; color: white; padding: 3px 8px; border-radius: 4px; font-size: 10px; position: absolute; top: 10px; right: 10px; }
+        .footer { background: #090c10; padding: 40px; font-size: 12px; color: #8b949e; }
+        .faq-box { text-align: left; max-width: 600px; margin: auto; background: #161b22; padding: 20px; border-radius: 10px; border: 1px solid #30363d; margin-bottom: 10px; }
     </style>
 </head>
 <body>
 
-    <div class="status">● SISTEMA OPERATIVO & CRYPTO-SECURE - GAYS STUDIOS</div>
+    <div class="status">● SISTEMA OPERATIVO & CRYPTO-SECURE - GAYS STUDIOS ONLINE</div>
 
     <nav>
-        <a href="#shop">SHOP</a>
-        <a href="#progetti">PROGETTI</a>
-        <a href="#fondatore">FONDATORE</a>
-        <a href="#obiettivi">GOALS</a>
-        <a href="#social">SOCIAL</a>
+        <a href="#shop">Store</a>
+        <a href="#progetti">Progetti</a>
+        <a href="#news">News</a>
+        <a href="#fondatore">Owner</a>
+        <a href="#obiettivi">Goals</a>
+        <a href="#faq">FAQ</a>
+        <a href="#social">Social</a>
     </nav>
+
+    <section id="news" style="background: linear-gradient(180deg, #161b22 0%, #0d1117 100%);">
+        <h2 style="color:#58a6ff">ULTIME NOTIZIE</h2>
+        <div class="faq-box" style="border-left: 4px solid #238636;">
+            <span style="color:#238636; font-size:12px; font-weight:bold;">OGGI, GENNAIO 2026</span>
+            <p style="margin: 5px 0;">🚀 <strong>Sito Ufficiale Lanciato!</strong> Lo shop di Gays Studios è finalmente aperto a tutti. Unisciti a noi!</p>
+        </div>
+    </section>
 
     <section id="shop">
         <h2 style="color:#58a6ff">OFFICIAL STORE</h2>
-        
-        <div class="card">
-            <span class="badge-vip" style="background:#28a745; color:white;">BASE</span>
-            <h3>Pass Community</h3>
-            <p style="font-size:24px; font-weight:bold;">10€</p>
-            <ul style="text-align:left; font-size:12px; color:#8b949e;">
-                <li>✅ Grado Supporter su Discord</li>
-                <li>✅ Accesso Chat Esclusive</li>
-            </ul>
-            <a href="https://www.paypal.me/nicholas1388/10" target="_blank"><button style="background:#28a745; color:white;">PayPal</button></a>
-            <button onclick="window.location.href='https://buy.stripe.com/test_3cI5kC9uE6oB3yY9jD14400'" style="background:#635bff; color:white;">Carta</button>
-        </div>
-
-        <div class="card">
-            <span class="badge-vip">PREMIUM</span>
-            <h3>Pass VIP</h3>
-            <p style="font-size:24px; font-weight:bold;">50€</p>
-            <ul style="text-align:left; font-size:12px; color:#8b949e;">
-                <li>✅ Grado VIP DIAMOND</li>
-                <li>✅ Scelta Prossimo Gioco</li>
-                <li>✅ Giveaway Esclusivi</li>
-            </ul>
-            <a href="https://www.paypal.me/nicholas1388/50" target="_blank"><button style="background:#d4af37; color:black;">PayPal Gold</button></a>
-            <button onclick="window.location.href='https://buy.stripe.com/test_28E3cugX614h6La7bv14401'" style="background:#635bff; color:white;">Carta</button>
-        </div>
-
-        <div class="card">
-            <span class="badge-vip" style="background:white; color:black;">ROBLOX</span>
-            <h3>Maglietta Ufficiale</h3>
-            <img src="images.jfif" style="width:80px; height:80px; margin:10px 0;">
-            <a href="https://www.roblox.com/it/catalog/104017603078559/maglietta-community" target="_blank">
-                <button style="background:white; color:black;">Acquista con Robux</button>
-            </a>
+        <div class="container">
+            <div class="card">
+                <span class="badge" style="background:#28a745;">BASE</span>
+                <h3>Pass Community</h3>
+                <p style="font-size:24px; font-weight:bold;">10€</p>
+                <p style="font-size:12px; color:#8b949e;">Grado Supporter + Chat Segrete</p>
+                <a href="https://www.paypal.me/nicholas1388/10" target="_blank"><button style="background:#28a745; color:white;">PayPal</button></a>
+                <button onclick="window.location.href='https://buy.stripe.com/test_3cI5kC9uE6oB3yY9jD14400'" style="background:#635bff; color:white;">Carta</button>
+            </div>
+            <div class="card">
+                <span class="badge" style="background:#d4af37; color:black;">GOLD</span>
+                <h3>Pass VIP</h3>
+                <p style="font-size:24px; font-weight:bold;">50€</p>
+                <p style="font-size:12px; color:#8b949e;">Grado VIP Diamond + Scelta Giochi</p>
+                <a href="https://www.paypal.me/nicholas1388/50" target="_blank"><button style="background:#d4af37; color:black;">PayPal Gold</button></a>
+                <button onclick="window.location.href='https://buy.stripe.com/test_28E3cugX614h6La7bv14401'" style="background:#635bff; color:white;">Carta</button>
+            </div>
+            <div class="card">
+                <span class="badge" style="background:white; color:black;">ITEM</span>
+                <h3>Maglietta Ufficiale</h3>
+                <img src="images.jfif" style="width:70px; margin:15px 0;">
+                <a href="https://www.roblox.com/it/catalog/104017603078559/maglietta-community" target="_blank">
+                    <button style="background:white; color:black;">Compra Robux</button>
+                </a>
+            </div>
         </div>
     </section>
 
     <section id="progetti" style="background:#161b22">
         <h2 style="color:#58a6ff">PROGETTI IN ARRIVO</h2>
-        <div class="card" style="border-style: dashed; opacity: 0.7;">
-            <h3>Progetto Alpha</h3>
-            <p style="font-size:12px;">Sviluppo: 10%</p>
-            <div class="bar"><div class="fill" style="width:10%; background:#28a745;"></div></div>
-            <p style="font-size:11px; color:#8b949e;">Un nuovo mondo sta per arrivare su Roblox.</p>
-        </div>
-        <div class="card" style="border-style: dashed; opacity: 0.7;">
-            <h3>Showcase Map</h3>
-            <p style="font-size:12px;">Sviluppo: In Pausa</p>
-            <div class="bar"><div class="fill" style="width:5%; background:#ff0050;"></div></div>
-            <p style="font-size:11px; color:#8b949e;">La grafica portata al limite.</p>
+        <div class="container">
+            <div class="card" style="border-style: dashed;">
+                <h3>Progetto Alpha</h3>
+                <p style="font-size:12px;">Sviluppo: 10%</p>
+                <div class="bar"><div class="fill" style="width:10%; background:#238636;"></div></div>
+            </div>
+            <div class="card" style="border-style: dashed;">
+                <h3>Showcase Map</h3>
+                <p style="font-size:12px;">Sviluppo: 5%</p>
+                <div class="bar"><div class="fill" style="width:5%; background:#58a6ff;"></div></div>
+            </div>
         </div>
     </section>
 
     <section id="fondatore">
         <h2 style="color:#58a6ff">IL FONDATORE</h2>
-        <div style="background:#1c2128; padding:20px; border-radius:15px; display:inline-block; border: 1px solid #30363d;">
-            <h3>👤 Nicholas</h3>
-            <p>Lead Developer & Founder di Gays Studios.</p>
-            <p style="color:#8b949e; font-size:14px; max-width:400px;">"Il mio obiettivo è creare un'esperienza unica per ogni giocatore della nostra community."</p>
+        <div style="background:#1c2128; padding:30px; border-radius:20px; display:inline-block; border:1px solid #58a6ff; max-width:500px;">
+            <h3 style="margin:0;">👤 Nicholas</h3>
+            <p style="color:#58a6ff; font-weight:bold; margin:5px 0;">Owner & Lead Dev</p>
+            <p style="color:#8b949e; font-size:14px;">"Dedico il mio tempo a creare una community dove ogni giocatore si senta a casa. Grazie per il supporto!"</p>
         </div>
     </section>
 
     <section id="obiettivi" style="background:#161b22">
         <h2 style="color:#58a6ff">COMMUNITY GOALS</h2>
-        <p>Target 100 Membri: 1%</p>
-        <div class="bar"><div class="fill" style="width:1%"></div></div>
-        <p>Target 200 Membri: 0%</p>
-        <div class="bar"><div class="fill" style="width:0%"></div></div>
-        <p style="color:#58a6ff; font-size:12px; margin-top:20px;">🏆 Prossimo traguardo: Giveaway Robux!</p>
+        <div style="max-width:500px; margin:auto;">
+            <p>100 Membri (1%)</p>
+            <div class="bar"><div class="fill" style="width:1%;"></div></div>
+            <p>200 Membri (0%)</p>
+            <div class="bar"><div class="fill" style="width:0.5%;"></div></div>
+            <p style="color:#58a6ff; font-size:14px; margin-top:15px;">🎁 Sblocca Giveaway Robux a 200!</p>
+        </div>
     </section>
 
-    <section id="social">
+    <section id="faq">
+        <h2 style="color:#58a6ff">DOMANDE FREQUENTI</h2>
+        <div class="faq-box">
+            <strong>Come ricevo il grado VIP?</strong><br>
+            <span style="color:#8b949e; font-size:14px;">Dopo l'acquisto, entra nel Discord e apri un ticket.</span>
+        </div>
+        <div class="faq-box">
+            <strong>I pagamenti sono sicuri?</strong><br>
+            <span style="color:#8b949e; font-size:14px;">Sì, usiamo PayPal e Stripe, i sistemi più sicuri al mondo.</span>
+        </div>
+    </section>
+
+    <section id="social" style="background:#161b22">
         <h2 style="color:#58a6ff">RESTA CONNESSO</h2>
-        <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-            <a href="https://discord.gg/44BV6XzmW" target="_blank"><button style="background:#7289da; color:white; width:160px;">DISCORD</button></a>
-            <a href="https://www.tiktok.com/@gays.studios" target="_blank"><button style="background:#ff0050; color:white; width:160px;">TIKTOK</button></a>
+        <div class="container">
+            <a href="https://discord.gg/44BV6XzmW" target="_blank" style="text-decoration:none;"><button style="background:#7289da; color:white; width:200px;">DISCORD</button></a>
+            <a href="https://www.tiktok.com/@gays.studios" target="_blank" style="text-decoration:none;"><button style="background:#ff0050; color:white; width:200px;">TIKTOK</button></a>
         </div>
     </section>
 
     <div class="footer">
-        <p>Gays Studios © 2026 | Nicholas - All Rights Reserved</p>
-        <p style="font-size:10px; margin-top:10px;">Questo sito non è affiliato con Roblox Corporation. Tutte le transazioni sono sicure e protette.</p>
+        <p>Gays Studios © 2026 | Fondato da Nicholas</p>
+        <p style="font-size:10px; margin-top:5px;">Tutti i diritti riservati. Non affiliato con Roblox Corp.</p>
     </div>
 
     <script src="https://js.stripe.com/v3/"></script>
